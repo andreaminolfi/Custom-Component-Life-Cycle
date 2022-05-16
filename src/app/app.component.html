@@ -1,4 +1,9 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<app-chart
+  type="line"
+  title="Temperature"
+  seriesName="Valori temperatura"
+  [data]="chartData"
+></app-chart>
+
+<button (click)="chartData = [12, 13, 17, 20, 18, 16]">Nuovi dati</button>
+<button (click)="chartData= [0, 2, 3, -1, 4, 8, 10]">Altri dati</button>
